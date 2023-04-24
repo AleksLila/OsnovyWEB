@@ -1,0 +1,55 @@
+.container{
+	width:100%;
+	background:#C5FFBB;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+.foto{
+   width: 700px;
+   margin: 0 auto
+}
+.Title {
+	font-size: 30px;
+	background-color: #C5FFBB;
+    color: gray;
+	margin-bottom: 30px;
+}		
+.Autobiography {
+	
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top:30px;
+}	
+.Description{
+	margin-top: 0px;
+	margin-bottom: 70px;
+	max-width:550px;
+	color: black;
+	font-size: 24px;
+	text-align: center;
+}
+.bytton{
+	display: block;
+	width: max-content;
+    margin-left: auto;
+	margin-right: auto;
+    
+	padding-left: 20px;
+	padding-right: 20px;
+    background: #bb711d;
+    border-radius: 50px;
+	
+	border: 1px solid blue;
+
+	font-size: 16px;
+	line-height: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	
+}
+.bytton:hover{
+	color: blueviolet;
+}
