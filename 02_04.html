@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Обрахунок</title>
+        <script>
+            function hello() {
+				let text_area = document.querySelector('textarea');
+			    let h1 = document.querySelector('h1');
+                let h2 = document.querySelector('h2');
+				let h3 = document.querySelector('h3');
+				var input = document.querySelector('input');
+			    upper=0;
+				var text = text_area.value , upper = text.match(/[A-Z]/g).length, lower = text.match(/[a-z]/g).length;
+            
+				h2.innerHTML=lower;
+				h3.innerHTML=upper;
+				h1.innerHTML=h2.innerHTML;
+				text_area=h3.innerHTML;
+				
+				
+				
+             }
+        </script>
+    </head>
+    <body>
+		<textarea name="" id="" cols="30" rows="10">122345
+		</textarea>
+        <h1>Привіт!!</h1>
+		<input type="text">
+		<h2>H</h2>
+		<h3>ПриветРР</h3>
+        <button onclick="hello()">Натисніть тут</button>
+    </body>
+</html>
+
+
+<!--	for(var i=0, upper=0, lower=0, digits=0, symbols=0, char, all_letters = input.length; i < 12; i++) {
+				char = input.value.charAt(i);
+
+					if (char == char.toUpperCase()) {
+					upper++;
+					}
+					else if (char == char.toLowerCase()) {
+					lower++;
+					}
+					else if (!isNaN(char)) {
+					digits++;
+					}
+					else {
+					symbols++;
+					}
+	}	
+-->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculation</title>
+        <script>
+            function transformText() {
+				let text_area = document.querySelector('textarea');
+			    let Upper = document.querySelector('#Upper');
+				let Lower = document.querySelector('#lower');
+				var text = text_area.value , upper = text.match(/[A-Z]/g).length, lower = text.match(/[a-z]/g).length; 
+            	Upper.innerHTML=upper;
+				Lower.innerHTML=lower;
+			}
+        </script>
+    </head>
+    <form>
+		<textarea name="" id="" cols="30" rows="10">
+		</textarea>
+		<h2>Number upper letter</h2>
+        <h2 id="Upper"></h2>
+		<h2>Number lower letter</h2>
+		<h2 id="lower"></h2>
+        <button submit="transformText()">Click here</button>
+    </form>
+</html>
+
+

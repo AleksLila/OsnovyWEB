@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+        <title>Обрахунок</title>
+        <script>
+            function countLetters() {
+			   var text_area = document.querySelector('textarea');
+			   var str = text_area.value
+			   var all_letters = str.length;
+
+				for(var i=0, upper=0, lower=0, digits=0, symbols=0, char; i < all_letters; i++) {
+				char = str.charAt(i);
+
+					if (!isNaN(char * 1)){
+					digits++;
+					}
+					else if("<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=".indexOf(char) != -1) {
+					symbols++;
+					}	
+					else if (char == char.toUpperCase()) {
+					upper++;
+					}
+					else if (char == char.toLowerCase()){
+					lower++;
+					}
+				}
+				let h1 = document.querySelector('#h1');
+                let h2 = document.querySelector('#h11');
+				
+				h1.innerHTML=upper;
+				h2.innerHTML=lower;
+		
+            }
+        </script>
+    </head>
+    <body>
+		<textarea name="" id="" cols="30" rows="10">
+		</textarea>
+		<h3>Великі букви:</h3>
+        <h2 id="h1">...</h2>
+		<h3>Mаленьки букви:</h>
+		<h2 id="h11">...</h2>
+		<button onclick="countLetters()">Натисніть тут</button>
+    </body>
+</html>
+
+
